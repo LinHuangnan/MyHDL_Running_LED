@@ -1,0 +1,165 @@
+synthesis:  version Diamond (64-bit) 3.8.0.115.3
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+Sun Jan 06 18:45:26 2019
+
+
+Command Line:  synthesis -f running_led_impl1_lattice.synproj -gui 
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is CSBGA132.
+The -d option is LCMXO2-4000HC.
+Using package CSBGA132.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-4000HC
+
+### Package : CSBGA132
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+Optimization goal = Balanced
+Top-level module name = running_led.
+Target frequency = 1.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/XuhuiTao/lattice/running_led (searchpath added)
+-p C:/lscc/diamond/3.8_x64/ispfpga/xo2c00/data (searchpath added)
+-p C:/XuhuiTao/lattice/running_led/impl1 (searchpath added)
+-p C:/XuhuiTao/lattice/running_led (searchpath added)
+Verilog design file = C:/XuhuiTao/lattice/running_led/running_led.v
+NGD file = running_led_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/xuhuitao/lattice/running_led/running_led.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Top module name (Verilog): running_led
+INFO - synthesis: c:/xuhuitao/lattice/running_led/running_led.v(8): compiling module running_led. VERI-1018
+WARNING - synthesis: c:/xuhuitao/lattice/running_led/running_led.v(35): expression size 32 truncated to fit in target size 24. VERI-1209
+WARNING - synthesis: c:/xuhuitao/lattice/running_led/running_led.v(56): shifting_register0_reg should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/xuhuitao/lattice/running_led/running_led.v(56): assignment under multiple single edges is not supported for synthesis. VERI-1466
+Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c4000.nph' in environment: C:/lscc/diamond/3.8_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = running_led.
+
+
+
+GSR instance connected to net reset_c.
+Applying 1.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in running_led_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file running_led_impl1.ngd.
+
+################### Begin Area Report (running_led)######################
+Number of register bits => 31 of 4635 (0 % )
+CCU2D => 12
+FD1P3AY => 1
+FD1P3IX => 7
+FD1S3AY => 1
+FD1S3IX => 22
+GSR => 1
+IB => 2
+LUT4 => 20
+OB => 8
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : clock_c, loads : 31
+Clock Enable Nets
+Number of Clock Enables: 1
+Top 1 highest fanout Clock Enables:
+  Net : clock_c_enable_8, loads : 8
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : n227, loads : 25
+  Net : clock_c_enable_8, loads : 8
+  Net : n228, loads : 7
+  Net : clock_led, loads : 3
+  Net : shifting_register0_reg_7_N_27_0, loads : 3
+  Net : clock_divider0_counter_21, loads : 2
+  Net : clock_divider0_counter_20, loads : 2
+  Net : clock_divider0_counter_19, loads : 2
+  Net : clock_divider0_counter_18, loads : 2
+  Net : clock_divider0_counter_17, loads : 2
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk0 [get_nets clock_c]                 |    1.000 MHz|   94.375 MHz|     6  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 54.066  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.359  secs
+--------------------------------------------------------------

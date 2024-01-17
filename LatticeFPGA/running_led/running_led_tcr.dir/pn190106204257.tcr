@@ -1,0 +1,9 @@
+#Start recording tcl command: 1/6/2019 18:44:38
+#Project Location: C:/XuhuiTao/lattice/running_led; Project name: running_led
+prj_project new -name "running_led" -impl "impl1" -dev LCMXO2-4000HC-4MG132C -synthesis "lse"
+prj_project save
+prj_src add "C:/XuhuiTao/lattice/running_led/running_led.v"
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+#Stop recording: 1/6/2019 20:42:57

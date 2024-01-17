@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/xuhuitao/lattice/running_led/running_led.v(8): </Dynamic>
+            <Dynamic>running_led</Dynamic>
+            <Navigation>c:/xuhuitao/lattice/running_led/running_led.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/xuhuitao/lattice/running_led/running_led.v(35): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>24</Dynamic>
+            <Navigation>c:/xuhuitao/lattice/running_led/running_led.v</Navigation>
+            <Navigation>35</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/xuhuitao/lattice/running_led/running_led.v(56): </Dynamic>
+            <Dynamic>shifting_register0_reg</Dynamic>
+            <Navigation>c:/xuhuitao/lattice/running_led/running_led.v</Navigation>
+            <Navigation>56</Navigation>
+        </Message>
+        <Message>
+            <ID>35901466</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/xuhuitao/lattice/running_led/running_led.v(56): </Dynamic>
+            <Navigation>c:/xuhuitao/lattice/running_led/running_led.v</Navigation>
+            <Navigation>56</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>clock_c</Dynamic>
+            <Dynamic>Primary</Dynamic>
+            <Dynamic>clock</Dynamic>
+            <Dynamic>C1</Dynamic>
+            <Dynamic>Primary</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

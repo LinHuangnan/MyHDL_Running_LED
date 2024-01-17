@@ -1,0 +1,16 @@
+----------------------------------------------------------------------
+Report for cell running_led.TECH
+Register bits:  31 of 4635 (0.669%)
+I/O cells:      10
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        12          100.0
+                            FD1P3AY         1          100.0
+                            FD1P3IX         7          100.0
+                            FD1S3AY         1          100.0
+                            FD1S3IX        22          100.0
+                                GSR         1          100.0
+                                 IB         2          100.0
+                               LUT4        20          100.0
+                                 OB         8          100.0
+                              TOTAL        74
